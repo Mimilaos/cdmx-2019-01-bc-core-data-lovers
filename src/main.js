@@ -20,7 +20,6 @@ data.forEach(element =>{
     //let spawnChance= element.spawn_chance;
     //let avgSpawns = element.avg_spawns;
     //let spawnTime = element.spawn_time;
-    //let weaknesses= element.weaknesses;
 })
 //print.innerAdjacentHTML("beforeend", result)
 return search;
