@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #contenedor
 overflow: hidden;
  background-image: url("http://oi66.tinypic.com/jtm0ro.jpg");
@@ -7,3 +8,69 @@ overflow: hidden;
  background-position: center;
  background-repeat: no-repeat;
  background-attachment: fixed;
+=======
+#mainly {
+    background-image: url(../Banner\ \ Pokémon.png);
+    background-size: 100vw;
+    background-attachment: scroll;
+    height: 28.5vw;
+    
+}
+#seeker-bar {
+    background-color: rgba(10, 34, 248, 0.884);
+    text-align: right;
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(248, 212, 9);
+    font-weight: bold;
+    font-size: 5vw;
+}
+input{
+    height: 4vw;
+    border-radius: 2em;
+    margin: 1vw;
+}
+#center-area {
+    background-image: url(../Background\ Pokemon.png);
+    background-size: 200vw;
+    height: 95vw;
+    width: 104.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;   
+}
+.pokemon-img{
+    background: aliceblue;
+    height: 25vw;
+    width: 20vw;
+}
+.spawns-pokemon{
+    background-color: rgb(18, 18, 207);
+    height: 15vw;
+    width: 15vw;
+}
+.info-pokemon{
+    background-color: antiquewhite;
+    height: 10vw;
+    width: 15vw;
+}
+
+.pokeball {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 5vw;
+    margin: 0vw;
+    position: relative;
+}
+
+.prev-evolution{
+    left: 10vw;
+}
+
+.original {
+    left: 40vw;
+}
+
+.next-evolution{
+    right: 10;
+}
+>>>>>>> upstream/master
