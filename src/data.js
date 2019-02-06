@@ -7,7 +7,7 @@ window.data = {
 
   } 
 
-  compuStatus: ()=>{
+  compuStats: ()=>{
 
   }
 }
