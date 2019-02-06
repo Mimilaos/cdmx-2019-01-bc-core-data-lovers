@@ -3,24 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Lovers</title>
-
+    <title>Search Pokemon</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <main>
-      <section></section>
-      <section>Buscador <input type="search" name="search" id="seeker"></section>
-      <section>
-        <img src="./data/pokemon/pokemon.js" alt="">        
-        <textarea name="id-pokemon" id="" cols="30" rows="10"></textarea>
+      <section id="mainly">
+      
+      </section>
+      
+      <section id="seeker-bar">
+        <label for="seeker">Buscador</label>
+        <input type="search" name="search" id="seeker">
+      </section>
+      
+      <section id="center-area">
+          <figure class="pokemon-img">
+              <img class="pokemon-img" src="" alt="">
+            </figure>
+          <textarea name="name-pokemon" id="name-pokemon" cols="30" rows="10"></textarea>
+          <textarea name="spawns" id="spawns-pokemon" cols="30" rows="10"></textarea>
+          <textarea name="info" cols="30" rows="10" id="info-pokemon"></textarea>
+          <figure class="pokeball"id="prev-evolution">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>
+          <figure class="pokeball" id="original">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>
+          <figure class="pokeball" id="netx-evolution">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>        
       </section>
       <section>
-        <textarea name="text-pokemon" cols="30" rows="10" id="info-pokemon"></textarea>
+        
       </section>
     </main>
-    <footer>Poke bola</footer>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
