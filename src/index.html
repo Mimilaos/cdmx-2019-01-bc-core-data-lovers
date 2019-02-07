@@ -10,22 +10,26 @@
   <body>
     <div id="root"></div>
     <main>
-      <section id="mainly">
-      
-      </section>
-      
+      <section id="mainly"></section>
       <section id="seeker-bar">
         <label for="seeker">Buscador</label>
         <input type="search" name="search" id="seeker">
       </section>
-      
+
       <section id="center-area">
+        <div class="info">
           <figure class="pokemon-img">
-              <img class="pokemon-img" src="" alt="">
+              <img src="" alt="">
             </figure>
-          <textarea name="name-pokemon" id="name-pokemon" cols="30" rows="10"></textarea>
-          <textarea name="spawns" id="spawns-pokemon" cols="30" rows="10"></textarea>
-          <textarea name="info" cols="30" rows="10" id="info-pokemon"></textarea>
+          <textarea name="spawns" id="spawns-pokemon"></textarea> 
+        </div>
+        <div class="info">
+          <textarea name="name" id="name-pokemon"></textarea>
+          <textarea name="info" id="icono-box"></textarea>          
+        </div>
+
+        <div id="pokeball-container">
+          
           <figure class="pokeball"id="prev-evolution">
             <img class="pokeball" src="../pokeball_PNG8.png" alt="">
           </figure>
@@ -34,12 +38,13 @@
           </figure>
           <figure class="pokeball" id="netx-evolution">
             <img class="pokeball" src="../pokeball_PNG8.png" alt="">
-          </figure>        
-      </section>
-      <section>
-        
+          </figure>
+        </div>          
+       
       </section>
     </main>
+   
+   
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
