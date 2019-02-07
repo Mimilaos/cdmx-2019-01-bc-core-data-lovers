@@ -23,7 +23,7 @@ body, main, #center-area {
     font-size: 4vw;
 }
 
-input{
+#seeker{
     height: 4vw;
     width: 25vw;
     border-radius: 2em;
@@ -97,15 +97,28 @@ input{
 
 #icono-box {
     height: 23vw;
-    width: 30vw;
+    width: 25vw;
     margin: 0vw;
     margin-top: 15vw;
-    background-attachment: fixed;
     display: inline-block;
-    background-attachment: fixed;
     position: absolute;
 }
 
+#iconografic{
+    height: 23vw;
+    width: 5vw;
+    margin-top: 15vw;
+}
+
+/*#label-icono {
+    height: 23vw;
+    width: 5vw;
+    margin-top: 15vw;
+    background-size: 5vw;
+    background-image: url(../iconografía.png);
+    background-repeat: repeat;
+}
+*/
 .pokeball {
     height: 18vw;
     width: 18vw;
