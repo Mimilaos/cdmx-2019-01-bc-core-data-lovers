@@ -1,9 +1,18 @@
+/*body {
+    margin: 0vw;
+}
+*/
+body, main, #center-area {
+    margin: 0vw;
+}
+
 #mainly {
     background-image: url(../Banner\ \ Pokémon.png);
     background-size: 100vw;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 28.5vw;
-    
+    height: 29vw;
+
 }
 #seeker-bar {
     background-color: rgba(10, 34, 248, 0.884);
@@ -11,54 +20,98 @@
     font-family: 'Patrick Hand', cursive;
     color: rgb(248, 212, 9);
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 4vw;
 }
+
 input{
     height: 4vw;
+    width: 25vw;
     border-radius: 2em;
     margin: 1vw;
+    margin-right: 3vw;
 }
+
 #center-area {
     background-image: url(../Background\ Pokemon.png);
     background-size: 200vw;
     height: 95vw;
-    width: 104.5vw;
+    width: 107vw;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;   
 }
+
+.info {
+    height: 40vw;
+    width: 40vw;
+    margin: 0vw;
+    display: inline-block;
+    margin-top: 19vw;
+    margin-left: 8vw;
+    background-attachment: fixed;
+}
+
+#pokeball-container{
+    height: 20vw;
+    width: 70vw;
+    margin: 0vw;
+    display: inline-block;
+    margin-left: 15vw;
+    background-attachment: fixed;
+}
+
 .pokemon-img{
     background: aliceblue;
-    height: 25vw;
-    width: 20vw;
+    height: 24vw;
+    width: 30vw;
+    margin: 0vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    background-attachment: fixed;
+    display: inline-block;
+    position: absolute;
 }
-.spawns-pokemon{
-    background-color: rgb(18, 18, 207);
-    height: 15vw;
-    width: 15vw;
-}
-.info-pokemon{
-    background-color: antiquewhite;
+
+#spawns-pokemon {
     height: 10vw;
-    width: 15vw;
+    width: 30vw;
+    margin: 0vw;
+    margin-top: 28vw;
+    margin-left: 3vw;
+    background-attachment: fixed;
+    display: inline-block;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+#name-pokemon {
+    height: 10vw;
+    width: 30vw;
+    margin: 0vw;
+    margin-top: 2vw;
+    background-attachment: fixed;
+    display: inline-block;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+#icono-box {
+    height: 23vw;
+    width: 30vw;
+    margin: 0vw;
+    margin-top: 15vw;
+    background-attachment: fixed;
+    display: inline-block;
+    background-attachment: fixed;
+    position: absolute;
 }
 
 .pokeball {
-    height: 20vw;
-    width: 20vw;
+    height: 18vw;
+    width: 18vw;
     border-radius: 5vw;
-    margin: 0vw;
     position: relative;
-}
-
-.prev-evolution{
-    left: 10vw;
-}
-
-.original {
-    left: 40vw;
-}
-
-.next-evolution{
-    right: 10;
+    display: inline-block;
+    margin: 0vw;
+    margin-left: 2vw;        
 }
