@@ -1,9 +1,17 @@
-const dataPokemon = POKEMON.pokemon;
 const search = document.getElementById(seeker);
-// const idPokemon = document.getElementById(idPokemon);
-// const infoPokemon = document.getElementById(info-pokemon);
+const dataPokemon = POKEMON.pokemon;
 
-
-
-// const print = (num, name, img);
-
+dataPokemon.forEach(element =>{
+    let name = element.name;
+    let num = element.num;
+    let img = element.img;
+    let type = element.type;
+    let height = element.height;
+    let weight = element.weight;
+    let candy= element.candy;
+    let candyCount= element.candy_count;
+    let spawnChance= element.spawn_chance;
+    let avgSpawns = element.avg_spawns;
+    let spawnTime = element.spawn_time;
+    //console.log(weight);
+})
