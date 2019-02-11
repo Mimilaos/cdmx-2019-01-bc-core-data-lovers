@@ -1,13 +1,18 @@
-window.data = {
-  filterData: ()=> {
+const clases = document.getElementById("class-selector");
 
+window.data = {
+  
+  filterData: (clases)=> {
+    const dataPokemon = POKEMON;
+    console.log (dataPokemon);
+  }
   }
   
-  scortData: ()=>{
+//   scortData: ()=>{
 
-  } 
+//   } 
 
-  compuStats: ()=>{
+//   compuStats: ()=>{
 
-  }
-}
+//   }
+// }

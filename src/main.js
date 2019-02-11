@@ -1,6 +1,5 @@
 const search = document.getElementById(seeker);
 const dataPokemon = POKEMON.pokemon;
-// const print = `<textarea name="name" id="name-pokemon">${name}</textarea>`;
 
 dataPokemon.forEach(element =>{
     let name = element.name;
@@ -9,9 +8,10 @@ dataPokemon.forEach(element =>{
     let type = element.type;
     let height = element.height;
     let weight = element.weight;
-    console.log(weight);
+    let candy= element.candy;
+    let candyCount= element.candy_count;
+    let spawnChance= element.spawn_chance;
+    let avgSpawns = element.avg_spawns;
+    let spawnTime = element.spawn_time;
+    //console.log(weight);
 })
- 
-
-
-

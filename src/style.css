@@ -19,12 +19,21 @@ body, main, #center-area {
     font-size: 4vw;
 }
 
+#class-selector{
+    border-radius: 2vw;
+    font-family: 'Patrick Hand', cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 3vw;
+    background-color: rgb(12, 116, 235);
+}
+
 #seeker{
-    height: 4vw;
     width: 25vw;
     border-radius: 2vw;
     margin: 1vw;
     margin-right: 3vw;
+    font-size: 3vw;
 }
 
 #center-area {
