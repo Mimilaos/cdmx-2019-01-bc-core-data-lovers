@@ -1,10 +1,19 @@
-
-window.data = {
+const clases = document.getElementById("class-selector");
+const listTipePokemon = [''];
+window.pokemones = {
   
-  filterData: (clases)=> {
-    const dataPokemon = POKEMON;
-    console.log (dataPokemon);
+  filterData: (typePokemon, dataPokemon)=> {
+    dataPokemon.forEach(element => {
+      let miType = element.type[0];
+      if(element.type[0] === typePokemon){
+        console.log(mitype)
+      }
+    });
+    return 'result'
   }
+
+
+
   }
   
 //   scortData: ()=>{
@@ -15,21 +24,4 @@ window.data = {
 
 //   }
 // }
-
-// data.forEach(element =>{
-  //let id = element.id;
-  //let num = element.num;
-  //let name = element.name;
-  //let img = element.img;
-  //let type = element.type;
-  //let heigt= elemen.height;
-  //let weight= elemen.weight;
-  //let candy= elemen.candy;
-  //let candyCount= element.candy_count;
-  //let egg= element.egg;
-  //let spawnChance= element.spawn_chance;
-  //let avgSpawns = element.avg_spawns;
-  //let spawnTime = element.spawn_time;
-// })
-//print.innerAdjacentHTML("beforeend", result)
 

@@ -1,25 +1,26 @@
 
 const search = document.getElementById(seeker);
-const idPokemon = document.getElementById(idPokemon);
-const infoPokemon = document.getElementById(info-pokemon);
+const selector = document.getElementById('class-selector')
+const dataPokemon = POKEMON.pokemon;
 
-
-const print = (num, name, img);
-
-data.forEach(element =>{
-    //let id = element.id;
-    //let num = element.num;
-    //let name = element.name;
-    //let img = element.img;
-    //let type = element.type;
-    //let heigt= elemen.height;
-    //let weight= elemen.weight;
-    //let candy= elemen.candy;
-    //let candyCount= element.candy_count;
-    //let egg= element.egg;
-    //let spawnChance= element.spawn_chance;
-    //let avgSpawns = element.avg_spawns;
-    //let spawnTime = element.spawn_time;
+dataPokemon.forEach(element => {
+    let name = element.name;
+    let num = element.num;
+    let img = element.img;
+    let type = element.type;
+    let height = element.height;
+    let weight = element.weight;
+    let candy = element.candy;
+    let candyCount = element.candy_count;
+    let spawnChance = element.spawn_chance;
+    let avgSpawns = element.avg_spawns;
+    let spawnTime = element.spawn_time;
+    //console.log(weight);
 })
-//print.innerAdjacentHTML("beforeend", result)
-return search;
+
+
+selector.addEventListener('change', () => {
+    let typePokemon = event.target.value;
+    document.getElementById('spawns-pokemon').innerHTML = window.pokemones.filterData( typePokemon, dataPokemon );
+})
+
