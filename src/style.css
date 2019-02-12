@@ -1,3 +1,4 @@
+
 body, main, #center-area {
     margin: 0vw;
 }
@@ -15,25 +16,16 @@ body, main, #center-area {
     text-align: right;
     font-family: 'Patrick Hand', cursive;
     color: rgb(248, 212, 9);
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 4vw;
 }
 
-#class-selector{
-    border-radius: 2vw;
-    font-family: 'Patrick Hand', cursive;
-    color: white;
-    font-weight: bolder;
-    font-size: 3vw;
-    background-color: rgb(12, 116, 235);
-}
-
 #seeker{
+    height: 4vw;
     width: 25vw;
-    border-radius: 2vw;
+    border-radius: 2em;
     margin: 1vw;
     margin-right: 3vw;
-    font-size: 3vw;
 }
 
 #center-area {
@@ -65,6 +57,16 @@ body, main, #center-area {
     background-attachment: fixed;
 }
 
+.pokeball {
+    height: 18vw;
+    width: 18vw;
+    border-radius: 5vw;
+    position: relative;
+    display: inline-block;
+    margin: 0vw;
+    margin-left: 2vw;        
+}
+
 .pokemon-img{
     background: aliceblue;
     height: 24vw;
@@ -93,7 +95,7 @@ body, main, #center-area {
     height: 10vw;
     width: 30vw;
     margin: 0vw;
-    margin-top: 0vw;
+    margin-top: 2vw;
     background-attachment: fixed;
     display: inline-block;
     background-attachment: fixed;
@@ -101,10 +103,10 @@ body, main, #center-area {
 }
 
 #icono-box {
-    height: 24vw;
+    height: 23vw;
     width: 25vw;
     margin: 0vw;
-    margin-top: 14vw;
+    margin-top: 15vw;
     display: inline-block;
     position: absolute;
 }
@@ -115,12 +117,4 @@ body, main, #center-area {
     margin-top: 15vw;
 }
 
-.pokeball {
-    height: 18vw;
-    width: 18vw;
-    border-radius: 5vw;
-    position: relative;
-    display: inline-block;
-    margin: 0vw;
-    margin-left: 2vw;        
-}
+
