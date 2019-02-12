@@ -1,10 +1,10 @@
-
-const search = document.getElementById(seeker);
+const search = document.getElementById('seeker');
 const selector = document.getElementById('class-selector')
 const dataPokemon = POKEMON.pokemon;
 
 dataPokemon.forEach(element => {
     let name = element.name;
+    //console.log(name)
     let num = element.num;
     let img = element.img;
     let type = element.type;
@@ -21,6 +21,6 @@ dataPokemon.forEach(element => {
 
 selector.addEventListener('change', () => {
     let typePokemon = event.target.value;
-    document.getElementById('spawns-pokemon').innerHTML = window.pokemones.filterData( typePokemon, dataPokemon );
+    document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData(typePokemon, dataPokemon);
 })
 
