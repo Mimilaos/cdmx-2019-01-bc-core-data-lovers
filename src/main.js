@@ -1,8 +1,9 @@
-const search = document.getElementById(seeker);
+const search = document.getElementById('seeker');
 const dataPokemon = POKEMON.pokemon;
 
 dataPokemon.forEach(element =>{
     let name = element.name;
+    console.log(name)
     let num = element.num;
     let img = element.img;
     let type = element.type;
