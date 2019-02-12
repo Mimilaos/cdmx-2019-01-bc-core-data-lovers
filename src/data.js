@@ -6,7 +6,7 @@ window.pokemones = {
     dataPokemon.forEach(element => {
       let miType = element.type[0];
       if(element.type[0] === typePokemon){
-        listTypePokemon = listTypePokemon + element.name;
+        listTypePokemon = listTypePokemon + [element.name, element.img];
       }
     });
     return listTypePokemon;

@@ -1,4 +1,4 @@
-const search = document.getElementById('seeker');
+ const search = document.getElementById('seeker');
 const selector = document.getElementById('class-selector')
 const dataPokemon = POKEMON.pokemon;
 
@@ -22,5 +22,9 @@ dataPokemon.forEach(element => {
 selector.addEventListener('change', () => {
     let typePokemon = event.target.value;
     document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData(typePokemon, dataPokemon);
+
+
+    id="listTypePokemon"
+    document.getElementById(listTypePokemon).innerHTML = let name;
 })
 
