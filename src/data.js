@@ -1,11 +1,19 @@
 const clases = document.getElementById("class-selector");
-
-window.data = {
+window.pokemones = {
   
-  filterData: (clases)=> {
-    const dataPokemon = POKEMON;
-    console.log (dataPokemon);
+  filterData: (typePokemon, dataPokemon)=> {
+    let listTypePokemon = [''];
+    dataPokemon.forEach(element => {
+      let miType = element.type[0];
+      if(element.type[0] === typePokemon){
+        listTypePokemon = listTypePokemon + element.name;
+      }
+    });
+    return listTypePokemon;
   }
+
+
+
   }
   
 //   scortData: ()=>{
@@ -16,3 +24,4 @@ window.data = {
 
 //   }
 // }
+
