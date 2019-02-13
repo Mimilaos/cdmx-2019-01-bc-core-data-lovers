@@ -1,12 +1,11 @@
-const clases = document.getElementById("class-selector");
 window.pokemones = {
   
   filterData: (typePokemon, dataPokemon)=> {
     let listTypePokemon = [''];
-    dataPokemon.forEach(element => {
-      let miType = element.type[0];
-      if(element.type[0] === typePokemon){
-        listTypePokemon = listTypePokemon + element.name;
+    dataPokemon.forEach(dataPokemon => {
+      let miType = dataPokemon.type[0];
+      if(dataPokemon.type[0] === typePokemon){
+        listTypePokemon = listTypePokemon + [dataPokemon.name, dataPokemon.img];
       }
     });
     return listTypePokemon;

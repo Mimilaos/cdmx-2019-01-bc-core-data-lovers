@@ -1,6 +1,7 @@
 const search = document.getElementById('seeker');
-const selector = document.getElementById('class-selector')
+const selector = document.getElementById('class-selector');
 const dataPokemon = POKEMON.pokemon;
+const imprimir=document.getElementById('listTypePokemon');
 
 dataPokemon.forEach(element => {
     let name = element.name;
@@ -21,6 +22,21 @@ dataPokemon.forEach(element => {
 
 selector.addEventListener('change', () => {
     let typePokemon = event.target.value;
-    document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData(typePokemon, dataPokemon);
+   // document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData( typePokemon, dataPokemon);
+   let valorPokemon = window.pokemones.filterData( typePokemon, dataPokemon);
+  // console.log(valorPokemon);
+
+  mostrarPokemon (valorPokemon)
+  return valorPokemon;
 })
 
+const mostrarPokemon = (valorPokemon)=> {
+    let mostrar=" ";
+    for (let key in valorPokemon)
+    {
+        mostrar = `<section id="listTypePokemon"><img src="${valorPokemon}" alt="" ></section>`
+    }
+
+    imprimir.insertAdjacentElement = mostrar;
+    return mostrar;
+}
