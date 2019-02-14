@@ -1,5 +1,7 @@
-const search = document.getElementById('seeker');
+
 const selector = document.getElementById('class-selector');
+//const imprimir=document.getElementById('listTypePokemon');
+//const nombrePokemon = document.getElementById('name-pokemon');
 const dataPokemon = POKEMON.pokemon;
 
 const nPokemon = document.getElementById('name-pokemon');
