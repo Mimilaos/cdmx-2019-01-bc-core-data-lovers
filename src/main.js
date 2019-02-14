@@ -1,10 +1,10 @@
- const search = document.getElementById('seeker');
-const selector = document.getElementById('class-selector')
+const search = document.getElementById('seeker');
+const selector = document.getElementById('class-selector');
 const dataPokemon = POKEMON.pokemon;
+const nPokemon = document.getElementById('name-pokemon');
 
 dataPokemon.forEach(element => {
     let name = element.name;
-    //console.log(name)
     let num = element.num;
     let img = element.img;
     let type = element.type;
@@ -15,7 +15,7 @@ dataPokemon.forEach(element => {
     let spawnChance = element.spawn_chance;
     let avgSpawns = element.avg_spawns;
     let spawnTime = element.spawn_time;
-    //console.log(weight);
+    
 })
 
 
@@ -25,6 +25,14 @@ selector.addEventListener('change', () => {
 
 
     id="listTypePokemon"
-    document.getElementById(listTypePokemon).innerHTML = let name;
+    document.getElementById(listTypePokemon).innerHTML = name;
+})
+
+nPokemon.addEventListener('onkeyDown',() => {
+    search = event.value;
+    let pokemonEncontrado = window.pokemones.filterName(search,dataPokemon);
+
+    id= 'name-pokemon'
+    document.getElementById(name-pokemon).innerHTML = pokemonEncontrado;
 })
 
