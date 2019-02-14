@@ -19,7 +19,7 @@ window.pokemones = {
       let myPokemon = pokemon.name[0].toUpperCase();
       if (myPokemon == nPokemon.toUpperCase()) {
         // pokemonEncontrado = dataPokemon + [pokemon.name];
-        console.log(pokemon)
+        console.log(pokemon);
       }
     });
     // return pokemonEncontrado;
