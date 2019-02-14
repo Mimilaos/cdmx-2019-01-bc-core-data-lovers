@@ -13,16 +13,16 @@ window.pokemones = {
     return listTypePokemon;
   },
 
-  filterName: (search, dataPokemon)=> {
+  filterName: (nPokemon, dataPokemon)=> {
     let pokemonEncontrado = [];
-    dataPokemon.forEach(element =>{
-      let myPokemon = element.name[0];
-      if (element.name === search) {
-        pokemonEncontrado = dataPokemon + [element.name];
-        console.log(pokemonEncontrado);
+    dataPokemon.forEach(pokemon =>{
+      let myPokemon = pokemon.name[0].toUpperCase();
+      if (myPokemon == nPokemon.toUpperCase()) {
+        // pokemonEncontrado = dataPokemon + [pokemon.name];
+        console.log(pokemon)
       }
     });
-    return pokemonEncontrado;
+    // return pokemonEncontrado;
   },
 }
 

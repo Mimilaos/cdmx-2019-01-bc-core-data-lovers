@@ -1,7 +1,6 @@
 const search = document.getElementById('seeker');
 const selector = document.getElementById('class-selector');
 const dataPokemon = POKEMON.pokemon;
-const nPokemon = document.getElementById('name-pokemon');
 
 dataPokemon.forEach(element => {
     let name = element.name;
@@ -28,11 +27,19 @@ selector.addEventListener('change', () => {
     document.getElementById(listTypePokemon).innerHTML = name;
 })
 
-nPokemon.addEventListener('onkeyDown',() => {
-    search = event.value;
-    let pokemonEncontrado = window.pokemones.filterName(search,dataPokemon);
+// nPokemon.addEventListener('onkeyDown',() => {
+//     search = event.value;
+//     let pokemonEncontrado = window.pokemones.filterName(search,dataPokemon);
 
-    id= 'name-pokemon'
-    document.getElementById(name-pokemon).innerHTML = pokemonEncontrado;
-})
+//     id= 'name-pokemon'
+//     document.getElementById(name-pokemon).innerHTML = pokemonEncontrado;
+// })
+
+const inputName = () => {
+    let nPokemon = search.value
+    window.pokemones.filterName(nPokemon, dataPokemon)
+}
+
+
+search.addEventListener('keyup' , inputName)
 
