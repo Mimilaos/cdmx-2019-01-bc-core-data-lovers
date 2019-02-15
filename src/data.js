@@ -1,19 +1,32 @@
+//const clases = document.getElementById("class-selector");
+
 window.pokemones = {
-  
-  filterData: (typePokemon, dataPokemon)=> {
-    let listTypePokemon = [''];
-    dataPokemon.forEach(dataPokemon => {
-      let miType = dataPokemon.type[0];
-      if(dataPokemon.type[0] === typePokemon){
-        listTypePokemon = listTypePokemon + [dataPokemon.name, dataPokemon.img];
+
+ filterData: (typePokemon, dataPokemon)=> {
+   let listTypePokemon = [];
+   dataPokemon.forEach(element => {
+     let miType = element.type[0];
+     if(element.type[0] === typePokemon){
+       listTypePokemon = listTypePokemon + [element.name, element.num, element.img];
+     }
+   });
+   return listTypePokemon;
+ },
+
+ filterName: (nPokemon, dataPokemon)=> {
+   let pokemonEncontrado = [];
+   dataPokemon.forEach(pokemon =>{
+     let myPokemon = pokemon.name[0].toUpperCase();
+     if (myPokemon == nPokemon.toUpperCase()) {
+        console.log(pokemonEncontrado);
       }
     });
-    return listTypePokemon;
-  }
+    return pokemonEncontrado;
+  },
+}
 
 
-
-  }
+  
   
 //   scortData: ()=>{
 

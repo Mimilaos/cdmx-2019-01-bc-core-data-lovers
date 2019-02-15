@@ -6,6 +6,7 @@
     <title>Search Pokemon</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   </head>
   <body>
     <div id="root"></div>
@@ -14,7 +15,6 @@
       
       <section id="seeker-bar">
         <label for="seeker">Buscador</label>
-
         <!--Listado de clases Pokemon--> 
         <select name="clases" id="class-selector">
           <option>Clase de Pokémon</option>
@@ -23,7 +23,6 @@
           <option value = "Ice" class="optionFilter">Hielo</option>
           <option value = "Grass" class="optionFilter">Hierba</option>
           <option value = "Poison" class="optionFilter">Veneno</option>
-          <option value = "Flying" class="optionFilter">Volador</option>
           <option value = "Psychic" class="optionFilter">Psiquico</option>
           <option value = "Ground" class="optionFilter">Tierra</option>
           <option value = "Rock" class="optionFilter">Roca</option>
@@ -34,11 +33,11 @@
           <option value = "Ghost" class="optionFilter">Fantasma</option>
         </select>
 
-        <input type="text" name="search" onchance="searchName()" id="seeker">
+        <input type="text" name="search" id="seeker">
       </section>
 
       <section id="center-area">
-        <div class="info">
+          <!--<div class="info">
           <figure class="pokemon-img">
               <img src="" alt="">
             </figure>
@@ -61,12 +60,13 @@
           <figure class="pokeball" id="netx-evolution">
             <img class="pokeball" src="../pokeball_PNG8.png" alt="">
           </figure>
-        </div>          
+        </div>-->          
       </section>
-      
-      <section id="listTypePokemon">
-        <img src="" alt="" >
+
+      <div id="listTypePokemon"></div>
+
       </section>
+
     </main>
    
    

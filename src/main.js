@@ -1,64 +1,36 @@
-
+const search = document.getElementById('seeker');
 const selector = document.getElementById('class-selector');
-//const imprimir=document.getElementById('listTypePokemon');
-//const nombrePokemon = document.getElementById('name-pokemon');
 const dataPokemon = POKEMON.pokemon;
+const imprimirTodo = document.getElementById('center-area');
 
-document.getElementById('seeker').onchange= searchName;
-    let pokemonEncontrado = dataPokemon.filter(dataPokemon => {
-        dataPokemon.forEach(dataPokemon => {
-            let nombre = dataPokemon.name[0];
-            if(dataPokemon.name[0] == searchName){
-             pokemonEncontrado = searchName + [datapokemon.name];
-            }
-        })
-    }); 
-    return pokemonEncontrado;
-    id="name-pokemon"
-    document.getElementById(name-pokemon),innerHTML = dataPokemon.name;
+const printPokemon = (dataPokemon) => {
+dataPokemon.forEach(element => {
+   let infPokemon = `<button class="casilla"><img src="${element.img}"><h6>${element.name.toUpperCase()}</h6><p>${element.type}</p><p>${element.num}</p><p>${element.height}</p><p>${element.weight}</p></button>`;
+   imprimirTodo.insertAdjacentHTML("beforeend", infPokemon);
+   return printPokemon;
+});  
+};
+printPokemon (dataPokemon);
 
 
-    
-  
-    
-      
- 
+selector.addEventListener('change', () => {
+   let typePokemon = event.target.value;
+   document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData(typePokemon, dataPokemon);
+   listTypePokemon.innerHTML = `<div id="${listTypePokemon}"><img src="${element.img}"><p>${name}</p><p>${element.num}</p><br></div>`;
+   listTypePokemon.insertAdjacentHTML("beforeend", result);
+})
 
- 
+const inputName = () => {
+   let nPokemon = search.value
+   window.pokemones.filterName(nPokemon, dataPokemon)
+}
 
-// dataPokemon.forEach(element => {
-//     let name = element.name;
-//     let num = element.num;
-//     let img = element.img;
-//     let type = element.type;
-//     let height = element.height;
-//     let weight = element.weight;
-//     let candy = element.candy;
-//     let candyCount = element.candy_count;
-//     let spawnChance = element.spawn_chance;
-//     let avgSpawns = element.avg_spawns;
-//     let spawnTime = element.spawn_time;
-//     console.log(weight);
+search.addEventListener('keyup' , inputName)
+// nPokemon.addEventListener('onkeyDown',() => {
+//     search = event.value;
+//     let pokemonEncontrado = window.pokemones.filterName(search,dataPokemon);
+
+//     id= 'name-pokemon'
+//     document.getElementById(name-pokemon).innerHTML = pokemonEncontrado;
 // })
 
-
-// selector.addEventListener('change', () => {
- //  let typePokemon = event.target.value;
-//    document.getElementById('listTypePokemon').innerHTML = window.pokemones.filterData( typePokemon, dataPokemon);
-//    let valorPokemon = window.pokemones.filterData( typePokemon, dataPokemon);
-//   console.log(valorPokemon);
-
-//   mostrarPokemon (valorPokemon)
-//   return valorPokemon;
-// })
-
-// const mostrarPokemon = (valorPokemon)=> {
-//     let mostrar=" ";
-//     for (let key in valorPokemon)
-//     {
-//         mostrar = `<section id="listTypePokemon"><img src="${valorPokemon}" alt="" ></section>`
-//     }
-
-//     imprimir.insertAdjacentElement = mostrar;
-//     return mostrar;
-// }
