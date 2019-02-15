@@ -119,7 +119,6 @@ body, main, #center-area {
 
 .casilla {
     display: inline-block;
-    float: left;
     border-width: 1vw;
     border-radius: 2vw;
     border-style: outset;   
