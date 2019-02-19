@@ -7,7 +7,7 @@ const imprimirTodo = document.getElementById('center-area');
 const printPokemon = (dataPokemon) => {
 dataPokemon.forEach(element => {
    console.log(element)
-   let infPokemon = `<button class="casilla"><h6>${element.name.toUpperCase()}</h6><img src="${element.img}"><p>${element.type}</p><p>${element.num}</p><p>${element.height}</p><p>${element.weight}</p></button>`;
+   let infPokemon = `<button onclick="pokemon-only" class="casilla"><h6>${element.name.toUpperCase()}</h6><img src="${element.img}"><p>${element.type}</p><p>${element.num}</p><p>${element.height}</p><p>${element.weight}</p></button>`;
    imprimirTodo.insertAdjacentHTML("beforeend", infPokemon);
    return printPokemon;
 });  
