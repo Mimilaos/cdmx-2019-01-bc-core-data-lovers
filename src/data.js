@@ -1,9 +1,7 @@
-//const clases = document.getElementById("class-selector");
-
 window.pokemones = {
-  
+
   filterData: (typePokemon, dataPokemon)=> {
-    let listTypePokemon = [''];
+    let listTypePokemon = [];
     dataPokemon.forEach(element => {
       let miType = element.type[0];
       if(element.type[0] === typePokemon){
@@ -12,29 +10,39 @@ window.pokemones = {
     });
     return listTypePokemon;
   },
-
+  
   filterName: (nPokemon, dataPokemon)=> {
     let pokemonEncontrado = [];
     dataPokemon.forEach(pokemon =>{
       let myPokemon = pokemon.name[0].toUpperCase();
       if (myPokemon == nPokemon.toUpperCase()) {
-        // pokemonEncontrado = dataPokemon + [pokemon.name];
-        console.log(pokemon);
-      }
-    });
-    // return pokemonEncontrado;
-  },
-}
+         console.log(pokemonEncontrado);
+       }
+     });
+     return pokemonEncontrado;
 
 
+     filterData: (typePokemon, dataPokemon)=> {
+      let filtroPorTipo = dataPokemon.filter(element => element.type.includes(typePokemon));
+      console.log(filtroPorTipo);
+      return filtroPorTipo;
+      },
+     selector.addEventListener('change', () => {
+       let typePokemon = event.target.value;
+       let porTipo = window.pokemones.filterData(typePokemon, dataPokemon);
+       imprimirPorTipo.innerHTML = porTipo;
+       return typePokemon(porTipo);
+   },
+  }
   
   
-//   scortData: ()=>{
-
-//   } 
-
-//   compuStats: ()=>{
-
-//   }
-// }
-
+  
+  
+  //   scortData: ()=>{
+  
+  //   }
+  
+  //   compuStats: ()=>{
+  
+  //   }
+  // }
