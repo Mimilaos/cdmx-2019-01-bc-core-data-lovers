@@ -7,85 +7,93 @@
    <link rel="stylesheet" href="style.css" />
    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   <link rel="shortcut icon" href="http://oi67.tinypic.com/2gsqqvs.jpg">
+   
    <!--  Styles  -->
   <link rel="stylesheet" href="styles/index.processed.css">
- </head>
 
- <body>
-<!--se agrega pagina de inicio--> 
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  </head>
+  <body>
+    <!-- <section id='main-page'>
+      <input type="button" value="COMENZAR">
+    </section> -->
+    <div id="root"></div>
+
     <section id="mainPage"> 
         <div id="wallpaper"> <img src="http://oi64.tinypic.com/141m53o.jpg" height="150px"> </div>  
       <input id="start-button" type="button" value="Comenzar" onclick="siguiente()"></input>
+    <main>
+      <section id="mainly"></section>
+      <section id="seeker-bar">
+        <label for="seeker">Buscador</label>
+        <!--Listado de clases Pokemon--> 
+        <select name="clases" id="class-selector">
+          <option>Clase de Pokémon</option>
+          <option value="Fire" class="optionFilter">Fuego</option>
+          <option value="Water" class="optionFilter">Agua</option>
+          <option value="Ice" class="optionFilter">Hielo</option>
+          <option value="Grass" class="optionFilter">Hierba</option>
+          <option value="Poison" class="optionFilter">Veneno</option>
+          <option value="Psychic" class="optionFilter">Psiquico</option>
+          <option value="Ground" class="optionFilter">Tierra</option>
+          <option value="Rock" class="optionFilter">Roca</option>
+          <option value="Electric" class="optionFilter">Electrico</option>
+          <option value="Bug" class="optionFilter">Insecto</option>
+          <option value="Normal" class="optionFilter">Normal</option>
+          <option value="Fighting" class="optionFilter">Peleador</option>
+          <option value="Ghost" class="optionFilter">Fantasma</option>
+        </select>
 
+        <input type="text" name="search" id="seeker" placeholder="Nombre del pokemon">
+        <ul id="listaNombres"></ul>
+      </section>
 
-   <div id="root"></div>
-   <main>
-     <section id="mainly"></section>
+      <section id="center-area">
+          <!--<div class="info">
+          <figure class="pokemon-img">
+              <img src="" alt="">
+            </figure>
+          <textarea name="spawns" id="spawns-pokemon"></textarea> 
+        </div>
+        <div class="info">
+          <textarea name="name" id="name-pokemon"></textarea>
+          <img id="iconografic" src="../iconografía.png" alt="">
+          <input type="text" name="info" id="icono-box">
+        </div>
 
-     <section id="seeker-bar">
-       <label for="seeker">Buscador</label>
-       <!--Listado de clases Pokemon-->
-       <select name="clases" id="class-selector">
-         <option>Clase de Pokémon</option>
-         <option value = "Fire" class="optionFilter">Fuego</option>
-         <option value = "Water" class="optionFilter">Agua</option>
-         <option value = "Ice" class="optionFilter">Hielo</option>
-         <option value = "Grass" class="optionFilter">Hierba</option>
-         <option value = "Poison" class="optionFilter">Veneno</option>
-         <option value = "Psychic" class="optionFilter">Psiquico</option>
-         <option value = "Ground" class="optionFilter">Tierra</option>
-         <option value = "Rock" class="optionFilter">Roca</option>
-         <option value = "Electric" class="optionFilter">Electrico</option>
-         <option value = "Bug" class="optionFilter">Insecto</option>
-         <option value = "Normal" class="optionFilter">Normal</option>
-         <option value = "Fighting" class="optionFilter">Peleador</option>
-         <option value = "Ghost" class="optionFilter">Fantasma</option>
-       </select>
+        <div id="pokeball-container">
+          
+          <figure class="pokeball"id="prev-evolution">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>
+          <figure class="pokeball" id="original">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>
+          <figure class="pokeball" id="netx-evolution">
+            <img class="pokeball" src="../pokeball_PNG8.png" alt="">
+          </figure>
+        </div>-->          
+      </section>
 
-       <input type="text" name="search" id="seeker">
-     </section>
+      </section>
 
-     <section id="center-area">
-         <!--<div class="info">
-         <figure class="pokemon-img">
-             <img src="" alt="">
-           </figure>
-         <textarea name="spawns" id="spawns-pokemon"></textarea>
-       </div>
-       <div class="info">
-         <textarea name="name" id="name-pokemon"></textarea>
-         <img id="iconografic" src="../iconografía.png" alt="">
-         <input type="text" name="info" id="icono-box">
-       </div>
+    </main>
+   
+   
+    <!-- <script src="./data/injuries/injuries.js"></script> -->
+    <script src="./data/pokemon/pokemon.js"></script>
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
 
-       <div id="pokeball-container">
-
-         <figure class="pokeball"id="prev-evolution">
-           <img class="pokeball" src="../pokeball_PNG8.png" alt="">
-         </figure>
-         <figure class="pokeball" id="original">
-           <img class="pokeball" src="../pokeball_PNG8.png" alt="">
-         </figure>
-         <figure class="pokeball" id="netx-evolution">
-           <img class="pokeball" src="../pokeball_PNG8.png" alt="">
-         </figure>
-       </div>-->
-     </section>
-
-     <div id="listTypePokemon"></div>
-
-     </section>
-
-   </main>
-
-
-   <!-- <script src="./data/injuries/injuries.js"></script> -->
-   <script src="./data/pokemon/pokemon.js"></script>
-   <!-- <script src="./data/steam/steam.js"></script> -->
-   <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-   <!-- <script src="./data/lol/lol.js"></script> -->
-   <script src="data.js"></script>
-   <script src="main.js"></script>
- </body>
 </html>

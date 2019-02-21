@@ -33,7 +33,7 @@ window.pokemones = {
        imprimirPorTipo.innerHTML = porTipo;
        return typePokemon(porTipo);
    },
-  }
+  
   
   
   
@@ -45,4 +45,3 @@ window.pokemones = {
   //   compuStats: ()=>{
   
   //   }
-  // }
