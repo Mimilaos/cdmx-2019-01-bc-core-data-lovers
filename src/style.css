@@ -1,60 +1,84 @@
 body {
     margin: 0vw;
     background-image: url(http://oi65.tinypic.com/nbdlr5.jpg);
-    background-image: url(http://oi64.tinypic.com/141m53o.jpg);
+ }
+ 
+#p-inicio{
+
+   left: 35vw;
+   right: 45vw;
+   padding: 33vw;
 }
 
-#mainly, #center-area {
+#b-inicio{
+left: 33vw;
+right: 25vw;
+width:100px;
+height: 22px;
+background-color: rgba(236, 29, 35, 0);
+background-image: url(https://imgur.com/a/sS6T2fp);
+background-position: center;
+border: 0px;
+font-size: 0%
+
+}
+
+ #mainly, #center-area {
     margin: 0vw;
-}
-
-#mainly {
+    
+ }
+ 
+ #mainly {
     background-image: url(http://oi66.tinypic.com/15czdw9.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: scroll;
     height: 29vw;
     padding: 0.9vw;
-}
-#seeker-bar {
-    background-color: rgba(10, 34, 248, 0.884);
+ }
+ #seeker-bar {
+    background-color: rgba(17, 71, 187, 0.884);
     text-align: right;
     font-family: 'Patrick Hand', cursive;
     color: rgb(248, 212, 9);
     font-weight: bold;
     font-size: 4vw;
     margin: -2vw;
-}
-
-#seeker{
+    
+ }
+ 
+ #seeker{
     height: 3vw;
     width: 25vw;
     border-radius: 2em;
     margin: 1vw;
     margin-right: 3vw;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.9vw;
     text-align: center;
-}
-
-#class-selector{
+    font-family: 'Patrick Hand', cursive;
+    color: blue;
+ }
+ 
+ #class-selector{
     border-radius: 2vw;
     font-family: 'Patrick Hand', cursive;
     color: white;
     font-weight: bolder;
     font-size: 2.5vw;
     background-color: rgb(12, 116, 235);
-}
-
-#center-area {
+ }
+ 
+ #center-area {
     width: 95vw;
     margin: 2vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;   
-}
-
-/* .info {
+    background-attachment: scroll;
+   
+ }
+ 
+ /* .info {
     height: 40vw;
     width: 40vw;
     margin: 0vw;
@@ -62,28 +86,28 @@ body {
     margin-top: 19vw;
     margin-left: 8vw;
     background-attachment: fixed;
-}
-
-#pokeball-container{
+ }
+ 
+ #pokeball-container{
     height: 20vw;
     width: 70vw;
     margin: 0vw;
     display: inline-block;
     margin-left: 15vw;
     background-attachment: fixed;
-}
-
-.pokeball {
+ }
+ 
+ .pokeball {
     height: 18vw;
     width: 18vw;
     border-radius: 5vw;
     position: relative;
     display: inline-block;
     margin: 0vw;
-    margin-left: 2vw;        
-}
-
-.pokemon-img{
+    margin-left: 2vw;
+ }
+ 
+ .pokemon-img{
     background: aliceblue;
     height: 24vw;
     width: 30vw;
@@ -93,9 +117,9 @@ body {
     background-attachment: fixed;
     display: inline-block;
     position: absolute;
-}
-
-#spawns-pokemon {
+ }
+ 
+ #spawns-pokemon {
     height: 10vw;
     width: 30vw;
     margin: 0vw;
@@ -105,9 +129,9 @@ body {
     display: inline-block;
     background-attachment: fixed;
     position: absolute;
-}
-
-#name-pokemon {
+ }
+ 
+ #name-pokemon {
     height: 10vw;
     width: 30vw;
     margin: 0vw;
@@ -116,54 +140,54 @@ body {
     display: inline-block;
     background-attachment: fixed;
     position: absolute;
-}
-
-#icono-box {
+ }
+ 
+ #icono-box {
     height: 23vw;
     width: 25vw;
     margin: 0vw;
     margin-top: 15vw;
     display: inline-block;
     position: absolute;
-}
-
-#iconografic{
+ }
+ 
+ #iconografic{
     height: 23vw;
     width: 5vw;
     margin-top: 15vw;
-} */
-
-.casilla {
+ } */
+ 
+ .casilla {
     display: inline-block;
     border-width: 1vw;
     background-color: transparent;
     border-radius: 2vw;
-    border-style: outset;   
+    border-style: outset;
     border-color: rgb(0, 110, 255);
     width: 22vw;
     margin: 0.5vw;
     height: 17vw;
     text-align: justify;
-    
-}
-.casilla h6 {
+ 
+ }
+ .casilla h6 {
     font-family: 'Patrick Hand', cursive;
     font-size: 2.5vw;
     color: rgb(248, 212, 9);
     margin: 0vw;
     text-align: center;
     text-shadow: 2px 2px 2px black;
-}
-.casilla img {
+ }
+ .casilla img {
     float: right;
     width: 10vw;
-}
-.casilla p {
+ }
+ .casilla p {
     margin: 0vw;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-}
-@media(max-width:360px) {
+ }
+ @media(max-width:360px) {
     .casilla {
         display: inline-block;
         border-width: 1vw;
@@ -172,7 +196,7 @@ body {
         margin: 0.5vw;
         height: 40vw;
         text-align: justify;
-        
+ 
     }
     .casilla h6 {
         font-size: 4vw;
@@ -186,11 +210,5 @@ body {
         font-family: 'Roboto', sans-serif;
     }
 
-   }
-   #wallpaper {
-       margin-top: 1vw;
-       width:100%;
-       max-width:400px;
-   }
-}
+ }
 
